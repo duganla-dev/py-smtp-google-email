@@ -8,7 +8,7 @@ def send_email_allert(subject, body, to):
     msg['subject'] = subject
     msg['to'] = to
 
-    account =
+    account = open('account.json') 
     account = json.load(account)
 
     user = account['user']
